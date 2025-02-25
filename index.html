@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulSpeak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">SoulSpeak</h1>
+                <button id="menuToggle" class="menu-toggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active">
+                    <i data-lucide="home"></i>
+                    <span class="nav-label">Dashboard</span>
+                </button>
+                <button class="nav-item">
+                    <i data-lucide="book"></i>
+                    <span class="nav-label">Resources</span>
+                </button>
+                <button class="nav-item">
+                    <i data-lucide="calendar"></i>
+                    <span class="nav-label">Sessions</span>
+                </button>
+                <button class="nav-item">
+                    <i data-lucide="users"></i>
+                    <span class="nav-label">Community</span>
+                </button>
+                <button class="nav-item">
+                    <i data-lucide="settings"></i>
+                    <span class="nav-label">Settings</span>
+                </button>
+            </nav>
+
+            <div class="theme-toggle">
+                <button id="themeToggle" class="theme-button">
+                    <i data-lucide="moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Welcome back, Sarah</h1>
+                <p>How are you feeling today?</p>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Mood Tracker</h3>
+                        <i data-lucide="bar-chart"></i>
+                    </div>
+                    <p class="card-value">Positive trend</p>
+                    <p class="card-description">Last 7 days</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Next Session</h3>
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <p class="card-value">Tomorrow, 2 PM</p>
+                    <p class="card-description">with Dr. Smith</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Resources</h3>
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <p class="card-value">3 new articles</p>
+                    <p class="card-description">Based on your interests</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Community</h3>
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <p class="card-value">5 new posts</p>
+                    <p class="card-description">In your groups</p>
+                </div>
+            </div>
+
+            <!-- Teams Integration Section -->
+            <div id="teamsIntegration" class="teams-integration"></div>
+
+            <!-- Journal Entry Section -->
+            <div id="journalEntry" class="journal-section"></div>
+
+            <!-- Therapy Booking Section -->
+            <div id="therapyBooking" class="booking-section"></div>
+
+            <!-- Crisis Support Section -->
+            <div id="crisisSupport" class="crisis-support"></div>
+        </main>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
