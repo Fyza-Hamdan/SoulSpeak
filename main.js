@@ -1,8 +1,8 @@
-import { createDashboard } from './components/dashboard.js';
-import { createTeamsIntegration } from './components/teamsIntegration.js';
-import { createJournalEntry } from './components/journalEntry.js';
-import { createTherapyBooking } from './components/therapyBooking.js';
-import { createCrisisSupport } from './components/crisisSupport.js';
+import { createDashboard } from './dashboard.js';
+import { createTeamsIntegration } from './teamsIntegration.js';
+import { createJournalEntry } from './journalEntry.js';
+import { createTherapyBooking } from './therapyBooking.js';
+import { createCrisisSupport } from './crisisSupport.js';
 
 // Initialize Lucide icons
 lucide.createIcons();
