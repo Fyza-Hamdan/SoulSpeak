@@ -252,3 +252,75 @@ body {
     border-radius: 0.5rem;
     resize: vertical;
 }
+
+/* Mood Tracker Styles */
+.mood-tracker-container {
+    background-color: var(--card-bg);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mood-tracker-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.mood-selector {
+    margin-bottom: 1.5rem;
+}
+
+.mood-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.mood-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    border: none;
+    background: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 120px;
+}
+
+.mood-button:hover {
+    background-color: rgba(79, 70, 229, 0.1);
+}
+
+.mood-button.selected {
+    background-color: rgba(79, 70, 229, 0.2);
+    transform: scale(1.05);
+}
+
+.mood-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #4F46E5;
+    margin-bottom: 0.25rem;
+}
+
+.mood-label {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.chart-container {
+    height: 16rem;
+    position: relative;
+}
+
+#moodChart {
+    width: 100% !important;
+    height: 100% !important;
+}

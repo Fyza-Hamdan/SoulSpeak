@@ -3,6 +3,13 @@ import { createTeamsIntegration } from './teamsIntegration.js';
 import { createJournalEntry } from './journalEntry.js';
 import { createTherapyBooking } from './therapyBooking.js';
 import { createCrisisSupport } from './crisisSupport.js';
+import { createMoodTracker } from './moodTracker.js';
+
+// Import Chart.js
+import Chart from 'chart.js/auto';
+
+// Make Chart available globally
+window.Chart = Chart;
 
 // Initialize Lucide icons
 lucide.createIcons();
@@ -30,6 +37,13 @@ menuToggle.addEventListener('click', () => {
 // Initialize components
 const mainContent = document.querySelector('.main-content');
 createDashboard(mainContent);
+
+// Replace the mood tracker card with the enhanced component
+const moodTrackerCard = mainContent.querySelector('.dashboard-card');
+if (moodTrackerCard) {
+    createMoodTracker(moodTrackerCard);
+}
+
 createTeamsIntegration(document.getElementById('teamsIntegration'));
 createJournalEntry(document.getElementById('journalEntry'));
 createTherapyBooking(document.getElementById('therapyBooking'));
