@@ -11,8 +11,10 @@ export function createDashboard(container) {
                     <h3 class="card-title">Mood Tracker</h3>
                     <i data-lucide="bar-chart"></i>
                 </div>
-                <p class="card-value">Positive trend</p>
-                <p class="card-description">Last 7 days</p>
+                <div>
+                    <p class="card-value">Positive trend</p>
+                    <p class="card-description">Last 7 days</p>
+                </div>
             </div>
 
             <div class="dashboard-card">
@@ -20,8 +22,10 @@ export function createDashboard(container) {
                     <h3 class="card-title">Next Session</h3>
                     <i data-lucide="calendar"></i>
                 </div>
-                <p class="card-value">Tomorrow, 2 PM</p>
-                <p class="card-description">with Dr. Smith</p>
+                <div>
+                    <p class="card-value">Tomorrow, 2 PM</p>
+                    <p class="card-description">with Dr. Smith</p>
+                </div>
             </div>
 
             <div class="dashboard-card">
@@ -29,8 +33,10 @@ export function createDashboard(container) {
                     <h3 class="card-title">Resources</h3>
                     <i data-lucide="book-open"></i>
                 </div>
-                <p class="card-value">3 new articles</p>
-                <p class="card-description">Based on your interests</p>
+                <div>
+                    <p class="card-value">3 new articles</p>
+                    <p class="card-description">Based on your interests</p>
+                </div>
             </div>
 
             <div class="dashboard-card">
@@ -38,8 +44,10 @@ export function createDashboard(container) {
                     <h3 class="card-title">Community</h3>
                     <i data-lucide="message-circle"></i>
                 </div>
-                <p class="card-value">5 new posts</p>
-                <p class="card-description">In your groups</p>
+                <div>
+                    <p class="card-value">5 new posts</p>
+                    <p class="card-description">In your groups</p>
+                </div>
             </div>
         </div>
 
